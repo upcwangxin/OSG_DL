@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>ico/Knob Add.ico</file>
+        <file>ico/Knob Attention.ico</file>
+        <file>ico/Knob Blue.ico</file>
+        <file>ico/Knob Cancel.ico</file>
+        <file>ico/Knob Download.ico</file>
+        <file>ico/Knob Fast Forward.ico</file>
+        <file>ico/Knob Fast Rewind.ico</file>
+        <file>ico/Knob Favorite.ico</file>
+        <file>ico/Knob Forward.ico</file>
+        <file>ico/Knob Graphite.ico</file>
+        <file>ico/Knob Green.ico</file>
+        <file>ico/Knob Grey.ico</file>
+        <file>ico/Knob Help.ico</file>
+        <file>ico/Knob Info.ico</file>
+        <file>ico/Knob Left.ico</file>
+        <file>ico/Knob Loop Off.ico</file>
+        <file>ico/Knob Loop On.ico</file>
+        <file>ico/Knob Message.ico</file>
+        <file>ico/Knob Orange.ico</file>
+        <file>ico/Knob Pause.ico</file>
+        <file>ico/Knob Play Green.ico</file>
+        <file>ico/Knob Play.ico</file>
+        <file>ico/Knob Purple.ico</file>
+        <file>ico/Knob Record Off.ico</file>
+        <file>ico/Knob Record On.ico</file>
+        <file>ico/Knob Red.ico</file>
+        <file>ico/Knob Refresh.ico</file>
+        <file>ico/Knob Remove Red.ico</file>
+        <file>ico/Knob Remove.ico</file>
+        <file>ico/Knob Search.ico</file>
+        <file>ico/Knob Shuffle Off.ico</file>
+        <file>ico/Knob Shuffle On.ico</file>
+        <file>ico/Knob Smart.ico</file>
+        <file>ico/Knob Snapback.ico</file>
+        <file>ico/Knob Snapforward.ico</file>
+        <file>ico/Knob Stop.ico</file>
+        <file>ico/Knob Upload.ico</file>
+        <file>ico/Knob Valid Blue.ico</file>
+        <file>ico/Knob Valid Green.ico</file>
+        <file>ico/inet.ico</file>
+    </qresource>
+</RCC>

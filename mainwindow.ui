@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1119</width>
+    <height>754</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>基于OSG的发电机三维仿真软件</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="tubiao.qrc">
+    <normaloff>:/new/ico/inet.ico</normaloff>:/new/ico/inet.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1" rowspan="3">
+     <widget class="ViewWidget" name="widget" native="true"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QTableWidget" name="natureTableWidget">
+      <property name="maximumSize">
+       <size>
+        <width>280</width>
+        <height>220</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="3">
+     <widget class="QTreeView" name="dataTree">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>813</width>
+         <height>198</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTabBar::tab{width:120}</string>
+          </property>
+          <property name="currentIndex">
+           <number>3</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>温度</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QCustomPlot" name="widget_QCustomPlot_temperature" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>压力</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QCustomPlot" name="widget_QCustomPlot_Pressure" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="widget">
+           <attribute name="title">
+            <string>转速</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QCustomPlot" name="widget_QCustomPlot_Speed" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>震动</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QCustomPlot" name="widget_QCustomPlot_Last" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>200</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QScrollArea" name="scrollArea_3">
+      <property name="maximumSize">
+       <size>
+        <width>280</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>278</width>
+         <height>198</height>
+        </rect>
+       </property>
+       <widget class="QTabWidget" name="tabWidget_Predict">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>9</y>
+          <width>261</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_HealthBar">
+         <attribute name="title">
+          <string>健康率</string>
+         </attribute>
+         <widget class="QCustomPlot" name="widget_QcustomPlot_health" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>-1</y>
+            <width>251</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>70</y>
+             <width>61</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>系统状态</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_time">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>10</y>
+             <width>81</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>   2018.5.28</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_status">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>100</y>
+             <width>61</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>未监测</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_Linear">
+         <attribute name="title">
+          <string>其他</string>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="maximumSize">
+       <size>
+        <width>280</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>278</width>
+         <height>217</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="correctRate">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>41</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>  未开始训练</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>42</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>系统健康率</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="modelName01">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>130</y>
+          <width>61</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="modelCorrect01">
+        <property name="geometry">
+         <rect>
+          <x>183</x>
+          <y>130</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="modelName02">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>160</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="modelCorrect02">
+        <property name="geometry">
+         <rect>
+          <x>183</x>
+          <y>160</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_ErrorName">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>90</y>
+          <width>171</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1119</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="File">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_File_OpenFile"/>
+    <addaction name="action_File_SaveFile"/>
+    <addaction name="action_File_OpenRecentFile"/>
+    <addaction name="action_File_Quit"/>
+   </widget>
+   <widget class="QMenu" name="Edit">
+    <property name="title">
+     <string>编译</string>
+    </property>
+    <addaction name="action_Edit_SetColor"/>
+    <addaction name="action_Edit_Split"/>
+    <addaction name="action_Edit_Reconsitution"/>
+   </widget>
+   <widget class="QMenu" name="Structure">
+    <property name="title">
+     <string>构建</string>
+    </property>
+    <widget class="QMenu" name="action_Structure_Move_2">
+     <property name="title">
+      <string>移动</string>
+     </property>
+     <addaction name="action_pointMove"/>
+     <addaction name="action_quickMove"/>
+    </widget>
+    <widget class="QMenu" name="action_Structure_Rotation">
+     <property name="title">
+      <string>旋转</string>
+     </property>
+     <addaction name="action_Structure_Rotation_Vec"/>
+     <addaction name="action_Structure_Rotation_Quick"/>
+    </widget>
+    <addaction name="action_Structure_Move_2"/>
+    <addaction name="action_Structure_Rotation"/>
+   </widget>
+   <widget class="QMenu" name="View">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="action_View_FullScreen"/>
+    <addaction name="action_View_ReOpen"/>
+   </widget>
+   <widget class="QMenu" name="Tool">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="Help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="Setting">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="action_Setting"/>
+   </widget>
+   <widget class="QMenu" name="menuDL">
+    <property name="title">
+     <string>DL模型</string>
+    </property>
+    <addaction name="action_Choose_Dataset"/>
+    <addaction name="action_modelConfirm"/>
+    <addaction name="action_4"/>
+   </widget>
+   <widget class="QMenu" name="menuDL_2">
+    <property name="title">
+     <string>DL监测</string>
+    </property>
+    <addaction name="action_predict_start"/>
+    <addaction name="action_Predict_End"/>
+   </widget>
+   <addaction name="File"/>
+   <addaction name="Edit"/>
+   <addaction name="Structure"/>
+   <addaction name="View"/>
+   <addaction name="menuDL"/>
+   <addaction name="menuDL_2"/>
+   <addaction name="Setting"/>
+   <addaction name="Tool"/>
+   <addaction name="Help"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_File_OpenFile_2"/>
+   <addaction name="separator"/>
+   <addaction name="action_Structure_Rotation_Quick_2"/>
+   <addaction name="action_Structure_quickMove"/>
+   <addaction name="action_Edit_Split_2"/>
+   <addaction name="action_Edit_Rotation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_File_OpenFile">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_File_SaveFile">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_File_OpenRecentFile">
+   <property name="text">
+    <string>最近</string>
+   </property>
+  </action>
+  <action name="action_File_Quit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_Edit_SetColor">
+   <property name="text">
+    <string>设置颜色</string>
+   </property>
+  </action>
+  <action name="action_pointMove">
+   <property name="text">
+    <string>定点移动</string>
+   </property>
+  </action>
+  <action name="action_Structure_Rotation_Vec">
+   <property name="text">
+    <string>Vec</string>
+   </property>
+  </action>
+  <action name="action_Structure_Rotation_Quick">
+   <property name="text">
+    <string>Quick</string>
+   </property>
+  </action>
+  <action name="action_quickMove">
+   <property name="text">
+    <string>快速移动</string>
+   </property>
+  </action>
+  <action name="action_Edit_Split">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>拆分</string>
+   </property>
+  </action>
+  <action name="action_Edit_Reconsitution">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>重构</string>
+   </property>
+  </action>
+  <action name="action_View_FullScreen">
+   <property name="text">
+    <string>全屏</string>
+   </property>
+  </action>
+  <action name="action_File_OpenFile_2">
+   <property name="icon">
+    <iconset resource="tubiao.qrc">
+     <normaloff>:/new/ico/Knob Add.ico</normaloff>:/new/ico/Knob Add.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开模型</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="action_Structure_Rotation_Quick_2">
+   <property name="icon">
+    <iconset resource="tubiao.qrc">
+     <normaloff>:/new/ico/Knob Refresh.ico</normaloff>:/new/ico/Knob Refresh.ico</iconset>
+   </property>
+   <property name="text">
+    <string>旋转</string>
+   </property>
+   <property name="toolTip">
+    <string>模型旋转</string>
+   </property>
+  </action>
+  <action name="action_Structure_quickMove">
+   <property name="icon">
+    <iconset resource="tubiao.qrc">
+     <normaloff>:/new/ico/Knob Forward.ico</normaloff>:/new/ico/Knob Forward.ico</iconset>
+   </property>
+   <property name="text">
+    <string>移动</string>
+   </property>
+   <property name="toolTip">
+    <string>模型快速移动</string>
+   </property>
+  </action>
+  <action name="action_Edit_Split_2">
+   <property name="icon">
+    <iconset resource="tubiao.qrc">
+     <normaloff>:/new/ico/Knob Fast Forward.ico</normaloff>:/new/ico/Knob Fast Forward.ico</iconset>
+   </property>
+   <property name="text">
+    <string>拆分</string>
+   </property>
+  </action>
+  <action name="action_Edit_Rotation">
+   <property name="icon">
+    <iconset resource="tubiao.qrc">
+     <normaloff>:/new/ico/Knob Fast Rewind.ico</normaloff>:/new/ico/Knob Fast Rewind.ico</iconset>
+   </property>
+   <property name="text">
+    <string>重构</string>
+   </property>
+  </action>
+  <action name="action_View_ReOpen">
+   <property name="text">
+    <string>重载模型</string>
+   </property>
+  </action>
+  <action name="action_Setting">
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="action_ChooseTraining">
+   <property name="text">
+    <string>选择训练</string>
+   </property>
+  </action>
+  <action name="action_modelConfirm">
+   <property name="text">
+    <string>模型验证</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>自动训练</string>
+   </property>
+  </action>
+  <action name="action_predict_start">
+   <property name="text">
+    <string>开始监测</string>
+   </property>
+  </action>
+  <action name="action_Predict_End">
+   <property name="text">
+    <string>结束监测</string>
+   </property>
+  </action>
+  <action name="action_Choose_Dataset">
+   <property name="text">
+    <string>选择数据集</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ViewWidget</class>
+   <extends>QWidget</extends>
+   <header>viewwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="tubiao.qrc"/>
+ </resources>
+ <connections/>
+</ui>

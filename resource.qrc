@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/tubiao">
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Add.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Attention.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Blue.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Cancel.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Download.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Fast Forward.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Fast Rewind.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Favorite.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Forward.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Graphite.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Green.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Grey.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Help.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Info.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Left.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Loop Off.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Loop On.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Message.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Orange.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Pause.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Play Green.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Play.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Purple.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Record Off.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Record On.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Red.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Refresh.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Remove Red.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Remove.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Search.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Shuffle Off.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Shuffle On.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Smart.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Snapback.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Snapforward.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Stop.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Upload.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Valid Blue.ico</file>
+        <file>E:/WorkSpace/OSGcode/demo(11.25)/ico/Knob Valid Green.ico</file>
+    </qresource>
+</RCC>
